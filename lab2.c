@@ -1,32 +1,29 @@
 #include <stdio.h>
 
-void odd_or_even(int number)
-{
-  if (number % 2 == 0) {
-    printf("%d is even\n", number);
-  } else {
-    printf("%d is odd\n", number);
+#define ROWS 500
+
+int main (){
+
+  int number_of_rows = 0;
+  int spaces_per_line = ROWS - 1;
+  int stars_per_line = 1;
+
+  while ( number_of_rows < ROWS ) {
+    int current_stars = 0;
+    int current_spaces = 0;
+    while (current_spaces < spaces_per_line ){
+      printf(" ");
+      current_spaces++;
+    }
+    while ( current_stars < stars_per_line ) {
+      printf("*");
+      current_stars++;
+    }
+    printf("\n");
+    spaces_per_line--;
+    stars_per_line = stars_per_line + 2;
+    number_of_rows++;
   }
-}
-
-int main()
-{
-
-  int number;
-
-  printf("Give me a four digit number: ");
-  scanf("%d", &number);
-
-  int fourth = number % 10;
-  int third = (number / 10) % 10;
-  int second = (number / 100) % 10;
-  int first = number / 1000;
-
-  odd_or_even(number);
-  odd_or_even(first);
-  odd_or_even(second);
-  odd_or_even(third);
-  odd_or_even(fourth);
-
   return 0;
+
 }

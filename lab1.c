@@ -1,17 +1,32 @@
 #include <stdio.h>
 
-main()
+void odd_or_even(int number)
 {
-  float pi = 3.141592;
-  float volume;
-  int radius;
+  if (number % 2 == 0) {
+    printf("%d is even\n", number);
+  } else {
+    printf("%d is odd\n", number);
+  }
+}
 
-  printf("Give me a number: ");
-  scanf("%d", &radius);
+int main()
+{
 
-  volume = 4.0/3.0 * pi * radius * radius * radius;
+  int number;
 
-  printf("The volume of a circle with a radius of %d is %.4f\n", radius, volume);
+  printf("Give me a four digit number: ");
+  scanf("%d", &number);
+
+  int fourth = number % 10;
+  int third = (number / 10) % 10;
+  int second = (number / 100) % 10;
+  int first = number / 1000;
+
+  odd_or_even(number);
+  odd_or_even(first);
+  odd_or_even(second);
+  odd_or_even(third);
+  odd_or_even(fourth);
 
   return 0;
 }
