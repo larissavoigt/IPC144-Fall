@@ -1,17 +1,22 @@
+/*
+ *Date: Oct 20, 2014
+ *Purpose of the program: Calculate the volume of a sphere
+ */
+
 #include <stdio.h>
 
-main()
-{
+int main() {
+
   float pi = 3.141592;
-  float volume;
   int radius;
 
-  printf("Give me a number: ");
+  printf("Please enter a value for radius: ");
   scanf("%d", &radius);
 
-  volume = 4.0/3.0 * pi * radius * radius * radius;
+  float volume = 4.0/3.0 * pi * (radius * radius * radius);
 
-  printf("The volume of a circle with a radius of %d is %.4f\n", radius, volume);
+  printf("Radius: %d\nVolume of the sphere: %.4f\n", radius, volume);
 
   return 0;
+
 }
