@@ -1,14 +1,3 @@
-/*
-program: a3Primer.c
-date:    november 3, 2014
-author:  danny abesdris
-purpose: primer for ipc144 (fall 2014) assignment #3
-including solution to the
-void genSudokuNumbers(int grid[]) function.
-
- *** UPDATED VERSION (1.1) posted on Nov 18, 2014 ***
- Update courtesy of: Joseph Hughes
- */
 
 #include <stdio.h>
 #include <time.h>
