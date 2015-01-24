@@ -1,22 +1,3 @@
-/*
- *
- * Assignment 1
- * Subject: IPC144L
- * Student name: Larissa de Jesus Voigt
- * Student number: 024769143
- * Instructor name: Danny Abesdris
- * Due date: October 3, 2014
- * Date submitted: September 28,2014
- * Purpose: First assignment - Fall 2014
- *
- *
- * Student Oath:
- *
- *  "I declare that the attached assignment is wholly my own work in accordance with Seneca Academic Policy. No part of this assignment has been copied manually or electronically from any other source (including web sites) or distributed to other students."
- *
- *  Name Larissa Voigt   Student ID 024769143
- *
- */
 
 #include <stdio.h>
 
